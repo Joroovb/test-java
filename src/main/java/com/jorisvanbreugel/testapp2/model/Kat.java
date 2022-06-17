@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 public class Kat {
-
+//
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public long id;
