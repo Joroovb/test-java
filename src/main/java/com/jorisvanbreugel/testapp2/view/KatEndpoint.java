@@ -19,7 +19,11 @@ public class KatEndpoint {
 
     @GetMapping("/{id}")
     public Kat haalKatBijID(@PathVariable(value = "id") long id) {
-        return katService.haalKatBijID(id);
+//        return katService.haalKatBijID(id);
+        Kat k = new Kat();
+        k.naam = "Melinoe";
+        k.leeftijd = 3;
+        return k;
     }
 
     @DeleteMapping("/{id}")
