@@ -16,13 +16,7 @@ public class KatEndpoint {
 
     @GetMapping("/all")
     public Iterable<Kat> haalAlleKatten() {
-        ArrayList<Kat> katten = new ArrayList<>();
-        Kat k = new Kat();
-        k.naam = "Melinoe";
-        k.leeftijd = 3;
-        katten.add(k);
-        return katten;
-//        return katService.haalAlleKatten();
+        return katService.haalAlleKatten();
     }
 
     @GetMapping("/{id}")
